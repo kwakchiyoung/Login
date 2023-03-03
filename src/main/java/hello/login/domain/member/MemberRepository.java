@@ -20,7 +20,7 @@ public class MemberRepository {
         store.put(member.getId(),member);
         return member;
     }
-    public Member findByid(Long id){ //Id로 찾기
+    public Member findById(Long id){ //Id로 찾기
         return store.get(id);
     }
     public Optional<Member> findByLoginId(String loginId){ //LoginId로 찾기
