@@ -25,6 +25,7 @@ public class SessionManager {
 
         //쿠키 생성
         Cookie mySessionCookie = new Cookie(SESSION_COOKIE_NAME,sessionId);
+        response.addCookie(mySessionCookie);
     }
     /**
      * 세션 조회
