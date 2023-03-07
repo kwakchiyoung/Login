@@ -79,7 +79,7 @@ public class HomeController {
         return "loginHome";
     }
 
-    @GetMapping("/") //로그인 처리까지 되는 화면
+    @GetMapping("/") //로그인 처리까지 되는 화면 dd
     public String homeLoginV3Spring(
             @SessionAttribute(name=SessionConst.LOGIN_MEMBER , required = false) Member loginMember, Model model){ //로그인 안한 사용자도 들어와야하므로 false
         ////세션에 회원 데이터가 없으면 home
